@@ -1,0 +1,23 @@
+.heading_1 {
+  font-family: $font-display;
+  font-size: 5rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 3.5rem;
+  }
+}
+
+.heading_2 {
+  font-family: $font-display;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.heading_3 {
+  font-family: $font-display;
+  font-weight: 700;
+  font-size: 1.5rem;
+}

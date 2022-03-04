@@ -1,0 +1,37 @@
+@import "../Sass/base";
+
+// GENERAL  RESET STYLING
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $color-secondary-2;
+  //   background-color: $color-primary;
+}
+
+.mainPage {
+  display: grid;
+  grid-template-rows: 80vh;
+  //   background-color: $color-primary;
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: 100vh;
+  }
+}

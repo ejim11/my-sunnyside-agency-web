@@ -1,0 +1,105 @@
+@import "../Sass/base";
+@import "../Sass/typograpghy";
+
+%layout {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 0rem 13rem;
+
+  display: grid;
+  align-items: start;
+  grid-template-rows: min-content 25%;
+  align-content: end;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0rem 10rem;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-size: 1.35rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 50rem);
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(3, 60rem);
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 50rem);
+  }
+
+  &__1,
+  &__4 {
+    background-color: rgba($color-tertiary, 0.1);
+    padding: 4rem 6rem;
+
+    display: grid;
+    justify-items: start;
+    grid-template-rows: repeat(3, min-content);
+    align-content: center;
+    justify-content: center;
+    grid-row-gap: 5rem;
+
+    @media only screen and (max-width: $bp-smaller) {
+      justify-items: center;
+      text-align: center;
+      padding: 4rem 8rem;
+    }
+
+    h2 {
+      color: $color-secondary-1;
+    }
+
+    p {
+      color: $color-secondary-4;
+      font-size: 1.35rem;
+      @media only screen and (max-width: $bp-smaller) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__5 {
+    @extend %layout;
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+    color: $color-secondary-2;
+  }
+  &__6 {
+    @extend %layout;
+    background-image: url("../images/desktop/image-photography.jpg");
+    color: $color-secondary-1;
+  }
+
+  &__btn {
+    color: $color-secondary-1;
+    font-weight: 700;
+    font-family: $font-display;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding-bottom: -0.5rem;
+    border-bottom: 0.5rem solid rgba($color-yellow, 0.3);
+  }
+
+  &__2 {
+    @media only screen and (max-width: $bp-smaller) {
+      grid-row: 1/2;
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

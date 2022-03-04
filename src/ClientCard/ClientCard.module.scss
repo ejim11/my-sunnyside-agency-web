@@ -1,0 +1,43 @@
+@import "../sass/base";
+@import "../Sass/typograpghy";
+
+.clientcard {
+  font-size: 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30rem;
+  padding: 2rem 1rem;
+
+  @media only screen and (max-width: $bp-small) {
+    height: 25rem;
+  }
+
+  // @media only screen and (max-width: $bp-smaller) {
+  //   flex: 0 0 100%;
+  // }
+
+  &__img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100%;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__name {
+    font-family: $font-display;
+    font-weight: 900;
+    color: $color-secondary-1;
+  }
+
+  &__job {
+    font-size: 1.2rem;
+    color: $color-secondary-4;
+    margin-top: -3rem;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../sass/base";
+@import "../Sass/typograpghy";
+
+.client {
+  background-color: rgba($color-tertiary, 0.1);
+  padding: 8rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+
+  &__clientList {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 30%));
+    grid-column-gap: 3rem;
+    grid-row-gap: 6rem;
+    justify-content: center;
+    justify-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-row-gap: 3rem;
+    }
+
+    // @media only screen and (max-width: $bp-smaller) {
+    //   display: flex;
+    // }
+  }
+
+  h4 {
+    grid-column: 1/-1;
+    font-family: $font-display;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-secondary-5;
+    letter-spacing: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+      letter-spacing: 0.5rem;
+      font-size: 1.5rem;
+    }
+    // @media only screen and (max-width: $bp-smaller) {
+    //   width: 100%;
+    //   text-align: center;
+    // }
+  }
+}
