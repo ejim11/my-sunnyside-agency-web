@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/my-sunnyside-agency-web/static/css/main.5b11a24f.css",
+    "main.js": "/my-sunnyside-agency-web/static/js/main.de82bb6a.js",
+    "static/media/image-header.jpg": "/my-sunnyside-agency-web/static/media/image-header.49b52ffa54752cb7c2d0.jpg",
+    "static/media/image-gallery-milkbottles.jpg": "/my-sunnyside-agency-web/static/media/image-gallery-milkbottles.df1d9d8460e873924250.jpg",
+    "static/media/image-gallery-sugarcubes.jpg": "/my-sunnyside-agency-web/static/media/image-gallery-sugarcubes.09b72f4fbfbf08579f9d.jpg",
+    "static/media/image-gallery-orange.jpg": "/my-sunnyside-agency-web/static/media/image-gallery-orange.49f4212bc650862672a7.jpg",
+    "static/media/image-gallery-cone.jpg": "/my-sunnyside-agency-web/static/media/image-gallery-cone.461ff4214c3ac822dfff.jpg",
+    "static/media/image-graphic-design.jpg": "/my-sunnyside-agency-web/static/media/image-graphic-design.7ac8bdf0d3df29591a3b.jpg",
+    "static/media/image-photography.jpg": "/my-sunnyside-agency-web/static/media/image-photography.104cf40b52f66520afb0.jpg",
+    "static/media/sprite.svg": "/my-sunnyside-agency-web/static/media/sprite.28681bed1327829d0c3e11a8a5cc976a.svg",
+    "index.html": "/my-sunnyside-agency-web/index.html",
+    "main.5b11a24f.css.map": "/my-sunnyside-agency-web/static/css/main.5b11a24f.css.map",
+    "main.de82bb6a.js.map": "/my-sunnyside-agency-web/static/js/main.de82bb6a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b11a24f.css",
+    "static/js/main.de82bb6a.js"
+  ]
+}
